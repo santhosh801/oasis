@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <style>
+        .converter-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            position: absolute;
+            
+        }
+        body {
+    background-image: url(16342945_rm373batch9-034.jpg);/* Replace with your image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; }
+        
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh; 
+ padding: 20px;   margin: 20;
+}
+
+.converter-box {
+    border: 7px solid black;
+    padding: 20px;
+    border-radius: 19px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(255, 62, 62, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 320px; 
+
+    text-align: center; 
+}
+
+.step {
+    margin: 10px 0; 
+}
+
+    </style>
+</head>
+<body>
+    <div id="sas">
+        <div class="container">
+            <div class="converter-box">
+                <h2>Temperature Converter</h2>
+               <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin using this simple tool. Enter the temperature value, select the unit, and click "Convert" to see the result in all three units.</p>
+           
+                
+                <div class="step">
+                    <label for="temperature">Temperature:</label>
+                    <input type="number" id="temperature" name="temperature">
+                </div>
+                
+                <div class="step">
+                    <label for="unit">Unit:</label>
+                    <select id="unit" name="unit">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                
+                <div class="step">
+                    <button onclick="convertTemperature()">Convert</button>
+                </div>
+                
+                <div class="step">
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
